@@ -1,0 +1,47 @@
+<%
+/**
+ This application is for demonstration use only. It contains known application security
+vulnerabilities that were created expressly for demonstrating the functionality of
+application security testing tools. These vulnerabilities may present risks to the
+technical environment in which the application is installed. You must delete and
+uninstall this demonstration application upon completion of the demonstration for
+which it is intended. 
+
+IBM DISCLAIMS ALL LIABILITY OF ANY KIND RESULTING FROM YOUR USE OF THE APPLICATION
+OR YOUR FAILURE TO DELETE THE APPLICATION FROM YOUR ENVIRONMENT UPON COMPLETION OF
+A DEMONSTRATION. IT IS YOUR RESPONSIBILITY TO DETERMINE IF THE PROGRAM IS APPROPRIATE
+OR SAFE FOR YOUR TECHNICAL ENVIRONMENT. NEVER INSTALL THE APPLICATION IN A PRODUCTION
+ENVIRONMENT. YOU ACKNOWLEDGE AND ACCEPT ALL RISKS ASSOCIATED WITH THE USE OF THE APPLICATION.
+
+IBM AltoroJ
+(c) Copyright IBM Corp. 2008, 2013 All Rights Reserved.
+*/
+%> 
+
+<!-- BEGIN FOOTER -->
+<%@page import="java.util.Date"%>
+<%@page import="java.util.Calendar"%>
+</tr>
+</table>
+<div id="footer" style="width: 99%;">
+    <a id="HyperLink5" href="<%=request.getContextPath()%>/index.jsp?content=security.htm">Terms of Use</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a id="HyperLink6" href="<%=request.getContextPath()%>/status_check.jsp">Server Status Check</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a id="HyperLink7" href="<%=request.getContextPath()%>/swagger/index.html">REST API</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp; 
+    &copy;&nbsp;<% out.print(Calendar.getInstance().get(Calendar.YEAR)); %> Patch Mutual, Inc.
+	<br><br><br>
+    <div class="disclaimer">
+        This website is published by Snyk Limited for the sole purpose of demonstrating the effectiveness of
+         its products in detecting web application vulnerabilities and website defects. This site is not a real banking site
+         and is designed with vulnerabilities. Similarities, if any, to third party products and/or websites are purely coincidental.
+         This site is provided "as is" without warranty of any kind, either express or implied, and you agree that in no event will
+         Snyk or its affiliates have any liability out of or in connection with the website. By access or using this website, you
+         agree you have read and agree to be bound by this disclaimer and the website <a id="HyperLink5" href="<%=request.getContextPath()%>/index.jsp?content=security.htm">Terms of Use</a>.
+    </div>
+</div>
+
+</body>
+</html>
+<!-- END FOOTER -->
